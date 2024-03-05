@@ -12,6 +12,7 @@ namespace net.Controllers
             return Ok(new {message="BONJOUR AHAHAHAAHA"});
         }
 
+        [HttpPost]
         public IActionResult Post()
         {
             return Ok(new { message = "WHOS GONNA CARRY THE BOATS" });
