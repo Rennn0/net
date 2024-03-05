@@ -11,6 +11,11 @@ namespace net.Controllers
         {
             return Ok(new {message="BONJOUR AHAHAHAAHA"});
         }
+
+        public IActionResult Post()
+        {
+            return Ok(new { message = "WHOS GONNA CARRY THE BOATS" });
+        }
     }
 }
 //U047PTERJ1U54VO1$
