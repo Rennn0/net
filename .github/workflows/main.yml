@@ -24,11 +24,11 @@ jobs:
         run: dotnet restore ./net.sln
 
       - name: Build
-        run: dotnet build ./net.sln --configuration Release --no-restore --output '${{env.AZURE_WEBAPP_PACKAGE_PATH }}'
+        run: dotnet build ./net.sln --configuration Release --no-restore
 
 
       - name: Publish
-        run: dotnet publish ./net.sln --configuration Release --no-build 
+        run: dotnet publish ./net.sln --configuration Release --no-build --output '${{env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
       - name: Deployment
         uses: azure/webapps-deploy@v2
