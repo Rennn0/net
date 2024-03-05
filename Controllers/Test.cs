@@ -9,7 +9,9 @@ namespace net.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new {message="BONJOUR"});
+            return Ok(new {message="BONJOUR AHAHAHAAHA"});
         }
     }
 }
+//U047PTERJ1U54VO1$
+//asp-net-database
